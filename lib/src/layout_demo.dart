@@ -23,7 +23,7 @@ class LayoutDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Text(
             'Column',
@@ -31,10 +31,10 @@ class LayoutDemo extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Container(
-            color: Colors.blue.shade200,
+            color: Colors.blue.shade300,
             padding: const EdgeInsets.all(16),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
                 Text('Item 1'),
                 Text('Item 2'),
@@ -73,7 +73,7 @@ class LayoutDemo extends StatelessWidget {
             color: Colors.orange.shade50,
             height: 120,
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
                 Text('Start', style: TextStyle(fontSize: 16)),

@@ -21,11 +21,11 @@ class _ApiDemoPageState extends State<ApiDemoPage> {
   }
 
   Future<void> fetchPosts() async {
-    final response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
-
+    final response = await http.get(Uri.parse('https://dummyjson.com/posts'));
+    print(response.statusCode);
     if (response.statusCode == 200) {
       setState(() {
-        posts = jsonDecode(response.body);
+        posts = jsonDecode(response.body)['posts'];
         isLoading = false;
       });
     } else {

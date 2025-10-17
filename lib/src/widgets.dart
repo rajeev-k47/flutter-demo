@@ -16,14 +16,12 @@ class WidgetsDemo extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             const Text(
               'Text Widget',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 10),
-
             const Divider(),
 
             const Text(
@@ -146,6 +144,7 @@ class WidgetsDemo extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
+            //How navigation works
             ElevatedButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => const SecondPage()));
             }, child: Text("Next Page")
